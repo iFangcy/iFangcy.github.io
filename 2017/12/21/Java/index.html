@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Java | iFangcy&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="一、基础1、基本数据类型整型    类型 存储 说明    byte 1 byte    short 2 byte    int 4 byte 默认整型   long 8 byte    浮点型    类型 存储 说明    float 4 byte    double 8 byte 默认浮点型   字符型    类型 存储 说明    char     布尔型    类型 存储 说明    bo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java">
+<meta property="og:url" content="https://ifangcy.com/2017/12/21/Java/">
+<meta property="og:site_name" content="iFangcy&#39;s Blog">
+<meta property="og:description" content="一、基础1、基本数据类型整型    类型 存储 说明    byte 1 byte    short 2 byte    int 4 byte 默认整型   long 8 byte    浮点型    类型 存储 说明    float 4 byte    double 8 byte 默认浮点型   字符型    类型 存储 说明    char     布尔型    类型 存储 说明    bo">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2017-12-21T01:30:48.000Z">
+<meta property="article:modified_time" content="2021-02-07T14:32:24.619Z">
+<meta property="article:author" content="iFangcy">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Maven">
+<meta property="article:tag" content="MySQL">
+<meta property="article:tag" content="Mybatis">
+<meta property="article:tag" content="JavaWeb">
+<meta property="article:tag" content="Tomcat">
+<meta property="article:tag" content="JDBC">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="iFangcy's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">iFangcy&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://ifangcy.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Java" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/12/21/Java/" class="article-date">
+  <time class="dt-published" datetime="2017-12-21T01:30:48.000Z" itemprop="datePublished">2017-12-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Java
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="一、基础"><a href="#一、基础" class="headerlink" title="一、基础"></a>一、基础</h2><h3 id="1、基本数据类型"><a href="#1、基本数据类型" class="headerlink" title="1、基本数据类型"></a>1、基本数据类型</h3><p>整型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>1 byte</td>
+<td></td>
+</tr>
+<tr>
+<td>short</td>
+<td>2 byte</td>
+<td></td>
+</tr>
+<tr>
+<td>int</td>
+<td>4 byte</td>
+<td>默认整型</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8 byte</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>浮点型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float</td>
+<td>4 byte</td>
+<td></td>
+</tr>
+<tr>
+<td>double</td>
+<td>8 byte</td>
+<td>默认浮点型</td>
+</tr>
+</tbody></table>
+<p>字符型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>char</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>布尔型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p><code>Java</code> 中没有无符号整型。</p>
+<p><code>Java</code> 中整型和布尔型之间不能互相转换。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 声明变量</span></span><br><span class="line"><span class="keyword">double</span> varDouble = <span class="number">12.4d</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 声明常量，Java 中使用 final 声明常量，常量一般使用全大写</span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">double</span> CONST_DOUBLE = <span class="number">12.4d</span>;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="2、字符串"><a href="#2、字符串" class="headerlink" title="2、字符串"></a>2、字符串</h3><p><code>Java</code> 中 <code>String</code> 不是基本类型而是一个类。</p>
+<p><code>String</code> 是不可变字符串，每次对字符串的修改都会返回一个新的字符串。</p>
+<p><code>String</code> 的判等只能使用 <code>equals</code> 而不能使用 <code>==</code>，<code>equals</code> 判断的是字符串语义上是否相等，<code>==</code> 判断的是内存地址是否相同。</p>
+<p><code>String</code> 常用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(String other)</span></span>; <span class="comment">// 按字典顺序排序，在 other 前返回小于0；在 other 之后返回大于0；相等返回0；</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(String other)</span></span>; <span class="comment">// 两个字符串是否相等，字符串的判等必须使用 equals 而不能使用 ==</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">equalsIgnoreCase</span><span class="params">(String other)</span></span>; <span class="comment">// 忽略大小写判等</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">startsWith</span><span class="params">(String prefix)</span></span>;	<span class="comment">// 是否以 prefix 开头</span></span><br><span class="line"><span class="function"><span class="keyword">boolean</span> <span class="title">endsWith</span><span class="params">(String suffix)</span></span>;	<span class="comment">// 是否以 suffix 结尾</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str)</span></span>;			<span class="comment">// 从索引0开始检索第一个与 str 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(String str, <span class="keyword">int</span> fromIndex)</span></span>; <span class="comment">// 从索引fromIndex开始检索第一个与 str 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(<span class="keyword">int</span> cp)</span></span>; <span class="comment">// 从索引0开始检索第一个与代码点 cp 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">indexOf</span><span class="params">(<span class="keyword">int</span> cp, <span class="keyword">int</span> fromIndex)</span></span>; <span class="comment">// 从索引fromIndex开始检索第一个与代码点 cp 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(String str)</span></span>;  <span class="comment">// 从字符串尾部开始检索第一个与代码点 cp 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(String str, <span class="keyword">int</span> fromIndex)</span></span>;  <span class="comment">// 从字符串尾部fromIndex开始检索第一个与代码点 cp 匹配的子串位置</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(<span class="keyword">int</span> cp)</span></span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">lastIndexOf</span><span class="params">(<span class="keyword">int</span> cp, <span class="keyword">int</span> fromIndex)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">length</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">String <span class="title">replace</span><span class="params">(CharSequence oldString, CharSequence newString)</span></span>;  <span class="comment">// 把字符串中所有 oldString 替换为 newString</span></span><br><span class="line"><span class="function">String <span class="title">subString</span><span class="params">(<span class="keyword">int</span> beginIndex)</span></span>; <span class="comment">// 从指定位置截取字符串</span></span><br><span class="line"><span class="function">String <span class="title">subString</span><span class="params">(<span class="keyword">int</span> beginIndex, <span class="keyword">int</span> endIndex)</span></span>;</span><br><span class="line"></span><br><span class="line"><span class="function">String <span class="title">toLowerCase</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function">String <span class="title">toUpperCase</span><span class="params">()</span></span>;</span><br><span class="line"><span class="function">String <span class="title">trim</span><span class="params">()</span></span>;			<span class="comment">// 去掉字符串中头部和尾部空格</span></span><br><span class="line"></span><br><span class="line"><span class="function">String <span class="title">join</span><span class="params">(CharSequence delimiter, CharSequence... elements)</span></span>; <span class="comment">// 使用指定分隔符连接所有字符串</span></span><br></pre></td></tr></table></figure>
+<p>因为字符串是不可变的，所以每次拼接字符串都会产生一个新的对象。可以使用 <code>StringBuilder</code> 和 <code>StringBuffer</code>  拼接字符串。<code>StringBuilder</code> 线程不安全性能更好，<code>StringBuffer</code> 线程安全但性能略差。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">StringBuilder builder = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">builder.append(<span class="string">&quot;1&quot;</span>);</span><br><span class="line">builder.append(<span class="string">&quot;2&quot;</span>);</span><br><span class="line">...</span><br><span class="line">builder.toString();</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="3、控制流程"><a href="#3、控制流程" class="headerlink" title="3、控制流程"></a>3、控制流程</h3><p><code>switch-case</code> 中可以放三种类型：</p>
+<ul>
+<li>整型（byte、short、int、long）</li>
+<li>枚举类型</li>
+<li>字符串</li>
+</ul>
+<h3 id="4、数组"><a href="#4、数组" class="headerlink" title="4、数组"></a>4、数组</h3><p>数组创建之后不能在修改大小，如果要使用能动态修改大小的数组可以使用 <code>ArrayList</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化</span></span><br><span class="line"><span class="keyword">int</span>[] a = &#123; <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span> &#125;;</span><br><span class="line"><span class="keyword">int</span>[] a = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123; <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 数组转字符串</span></span><br><span class="line">Arrays.toString(a);  </span><br></pre></td></tr></table></figure>
+<p><code>java.util.Arrays</code> 是数组的伴随类，提供了数组的常见操作，基本都是静态方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Arrays.toString();</span><br><span class="line">Arrays.sort();</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="5、枚举"><a href="#5、枚举" class="headerlink" title="5、枚举"></a>5、枚举</h3><p>所有的枚举类型都是 <code>Enum</code> 类的子类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Size</span> </span>&#123;</span><br><span class="line">    SMALL(<span class="string">&quot;S&quot;</span>),</span><br><span class="line">    MEDIUM(<span class="string">&quot;M&quot;</span>),</span><br><span class="line">    LARGE(<span class="string">&quot;L&quot;</span>),</span><br><span class="line">    EXTRA_LARGE(<span class="string">&quot;E&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String description;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Size</span><span class="params">(String description)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.description = description;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getDescription</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span>  description;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>定义了一个 <code>Size</code> 类，该类有四个实例。</p>
+<p>枚举的判等必须使用 <code>==</code> 而不能使用 <code>equals</code>。</p>
+<p>枚举常用方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// </span></span><br><span class="line">Size size = Size.SMALL;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回枚举常量名</span></span><br><span class="line">size.toString()</span><br><span class="line"></span><br><span class="line"><span class="comment">// 通过枚举常量名返回枚举值</span></span><br><span class="line">Size s = Enum.valueOf(Size.class, <span class="string">&quot;SMALL&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回枚举类型中所有枚举值</span></span><br><span class="line">Size[] values = Size.values();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回枚举值在枚举类型中的位置</span></span><br><span class="line">Size.SMALL.ordinal();</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="6、面向对象"><a href="#6、面向对象" class="headerlink" title="6、面向对象"></a>6、面向对象</h3><p>私有域 + 公开的访问器与修改器方法。</p>
+<p>方法重载：多个方法有相同的名字，不同的参数就叫方法重载。</p>
+<p>方法覆盖：子类重写父类的方法叫方法覆盖，方法覆盖时子类必须比父类更开放。</p>
+<p>方法签名：包括方法名称、参数类型，但不包括返回类型。</p>
+<p>默认构造器：如果类没有提供构造器则会自动添加一个默认无参构造器，如果提供了则不会有默认无参构造器。</p>
+<p>初始化一个类中的域可以有三个地方：</p>
+<ul>
+<li>域声明中</li>
+<li>初始化块（对象初始化块、静态域初始化块）</li>
+<li>构造器</li>
+</ul>
+<p>执行顺序是加载该类是就执行静态初始化块，构造对象时先执行域声明语句，然后执行对象初始化块，最后执行构造器：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Employee</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 声明域</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> level;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 静态域初始化块</span></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        Employee.level = <span class="number">1000</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 对象初始化块</span></span><br><span class="line">    &#123;</span><br><span class="line">        id = <span class="number">100</span>;</span><br><span class="line">        name = <span class="string">&quot;ifangcy&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Employee</span><span class="params">(<span class="keyword">int</span> id, String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.id = id;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>子类必须在构造器第一行调用父类的构造器，如果没有主动调用就会自动调用父类的默认无参构造器，如果父类没有默认无参构造器则报错。</p>
+<p>多态：一个对象变量可能指向多种实际的类型叫多态。（变量可以引用一个类型，也可以引用一个类型的子类）</p>
+<p>动态绑定：在运行时自动决定使用哪个对象的方法叫动态绑定。</p>
+<p><code>Java</code> 中的方法调用默认是动态绑定的，使用 <code>static</code>、<code>final</code>、<code>private</code> 可以消除动态绑定使用静态绑定。</p>
+<p>访问控制符：</p>
+<ul>
+<li><code>public</code> ：所以类都可见</li>
+<li><code>protected</code>：本包及所有子类可见</li>
+<li>默认：本包可见</li>
+<li><code>private</code>：只有本类可见</li>
+</ul>
+<p>超类 <code>Object</code> 常用方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 默认判断两个对象是否具有相同的引用</span></span><br><span class="line">equals()</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 默认返回对象的内存地址，如果覆盖 equals 方法就必须同时覆盖 hashCode 方法</span></span><br><span class="line">hashCode()</span><br><span class="line">    </span><br><span class="line"><span class="comment">// </span></span><br><span class="line">toString()</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="7、抽象类"><a href="#7、抽象类" class="headerlink" title="7、抽象类"></a>7、抽象类</h3><p>抽象类不一定有抽象方法，但有抽象方法就一定是抽象类。</p>
+<p>抽象类中可以包含具体数据和方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> String <span class="title">getDescription</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="8、反射"><a href="#8、反射" class="headerlink" title="8、反射"></a>8、反射</h3><h3 id="9、接口"><a href="#9、接口" class="headerlink" title="9、接口"></a>9、接口</h3><p>接口中所有方法默认都是 <code>public</code> 的不用显式声明，但是实现接口类中必须显示声明 <code>public</code>。</p>
+<p>接口不能包含实例域，但可以包含常量，所有的常量默认是 <code>public static final</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Comparable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(Object other)</span></span>;</span><br><span class="line">    <span class="keyword">double</span> CAN_COMPARABLE = <span class="number">10</span>;   <span class="comment">// public static final</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 扩展接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Moveable</span> <span class="keyword">extends</span> <span class="title">Comparable</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">move</span><span class="params">(<span class="keyword">double</span> x, <span class="keyword">double</span> y)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接口中方法可以使用 <code>default</code> 默认实现方法，实现类不必一定实现默认实现方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Comparable</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">// 方法默认实现，实现类不用一定实现</span></span><br><span class="line">    <span class="function"><span class="keyword">default</span> <span class="keyword">int</span> <span class="title">compareTo</span><span class="params">(T other)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果一个类中有很多静态方法，以前的解决办法是实现一个伴随类把这些静态方法都放到伴随类中，比如 <code>Collection/Collections</code>、<code>Path/Paths</code>等。现在接口中可以有静态方法，这是一个更好的解决办法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Path</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 静态方法，可代替伴随类</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Path <span class="title">get</span><span class="params">(String first, String... more)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> FileSystems.getDefault().getPath(first, more);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果实现类的父类和它实现的接口中有方法冲突，则父类方法优先，叫类优先。</p>
+<p>在没有 <code>lambda</code> 和内部类之前，回调的实现只能使用接口实现：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义回调中需要使用的接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEven evnet)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 实现接口</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">TimePrinter</span> <span class="keyword">implements</span> <span class="title">ActionListener</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent event)</span> </span>&#123;</span><br><span class="line">        System.out.print(<span class="string">&quot;action event&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用回调接口</span></span><br><span class="line">ActionListener listener = <span class="keyword">new</span> TimePrinter();</span><br><span class="line">Timer t = <span class="keyword">new</span> Time(<span class="number">1000</span>, listener);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="10、lambda"><a href="#10、lambda" class="headerlink" title="10、lambda"></a>10、lambda</h3><p><code>lambda</code> 不需要指定返回类型。</p>
+<p><code>lambda</code> 可以指定参数类型，如果可以推导出参数类型也可以省略参数类型。</p>
+<p><code>lambda</code> 如果没有参数也不能省略小括号。</p>
+<p><code>lambda</code> 如果只有一个参数才可以省略小括号。</p>
+<p>函数式接口：对于只有一个抽象方法（注意是只有一个抽象方法，可以有多个静态方法、多个默认实现方法）的接口叫函数式接口。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Timer 需要一个接口 ActionListener 参数</span></span><br><span class="line"><span class="comment">// ActionListener 接口只有一个抽象方法 actionPerformed</span></span><br><span class="line"><span class="comment">// 所以 ActionListener 接口是函数式接口</span></span><br><span class="line"><span class="comment">// 函数式接口可以直接使用 lambda</span></span><br><span class="line">Timer t = <span class="keyword">new</span> Timer(<span class="number">1000</span>, event -&gt; &#123;</span><br><span class="line">    System.out.println(event);</span><br><span class="line">&#125;);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
+<p><code>java.util.function</code> 中定义了很多常用的函数是接口，方便实用。</p>
+<p>方法引用：如果已有方法就满足了函数式接口的需求，可以使用方法引用的方式把该方法直接作为 <code>lambda</code> 传递。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 方法引用</span></span><br><span class="line">        Timer t = <span class="keyword">new</span> Timer(<span class="number">1000</span>, <span class="keyword">new</span> Test()::print);</span><br><span class="line">        t.start();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 该方法接收一个 ActionEvent 参数，可直接作为 lambda 方法直接方法引用</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">(ActionEvent event)</span> </span>&#123;</span><br><span class="line">        System.out.println(event);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>方法引用有三种方式：</p>
+<ul>
+<li><code>对象::实例方法</code></li>
+<li><code>类::静态方法</code></li>
+<li><code>类::实例方法</code></li>
+</ul>
+<p>前两个形式中所有参数都作为引用方法的参数。</p>
+<p>第三种方法中必须有多个参数，第一个参数作为该实例方法的调用者，其他参数作为实例方法参数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String::compareToIgnoreCase</span><br><span class="line">    </span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line">    </span><br><span class="line">(x, y) -&gt; x.compareToIgnoreCase(y);</span><br></pre></td></tr></table></figure>
+<p>构造器也可以用在方法引用中：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 构造器</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String[] names = &#123; <span class="string">&quot;Jack&quot;</span>, <span class="string">&quot;Tom&quot;</span>&#125;;</span><br><span class="line">        <span class="comment">// 构造器用作方法引用</span></span><br><span class="line">        Stream&lt;Person&gt; persons = Arrays.stream(names).map(Person::<span class="keyword">new</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>lambda</code> 中使用的 <code>this</code> 指的是创建该 <code>lambda</code> 表达式的方法中的 <code>this</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 这里 this 指的是当前 Person 对象</span></span><br><span class="line">        ActionListener listener = event -&gt; &#123;</span><br><span class="line">            System.out.println(<span class="keyword">this</span>.toString());</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>lambda</code> 会捕获外围变量，注意被捕获的变量不能被修改（无论 <code>lambda</code> 内部修改还是外部修改都不行）。</p>
+<h3 id="11、内部类"><a href="#11、内部类" class="headerlink" title="11、内部类"></a>11、内部类</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>内部类所有的静态域都必须是 <code>final</code>。</p>
+<p>内部类不能有 <code>static</code> 方法。</p>
+<p>在虚拟机中并没有内部类，内部类会被编译器编译成用 <code>$</code> 分隔的外部类与内部类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译后内部类名：Outer$Inner.class</span></span><br></pre></td></tr></table></figure>
+<p>内部类也可以定义在方法中，这时候称为局部内部类，局部内部类不能使用 <code>private</code> 或 <code>public</code> 修饰：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sayHello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 局部内部类</span></span><br><span class="line">        <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    	&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>和 <code>lambda</code> 一样，内部类中捕获的外部变量必须是不可变的 <code>final</code> 。</p>
+<p>如果局部内部类只需要创建一次对象，可以直接 <code>匿名内部类</code> 直接创建对象而不用命名类：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">ActionListener listener = <span class="keyword">new</span> ActionListener() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">actionPerformed</span><span class="params">(ActionEvent e)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">Timer t = <span class="keyword">new</span> Timer(<span class="number">1000</span>, listener);</span><br><span class="line">t.start();</span><br></pre></td></tr></table></figure>
+<p>如果内部类不需要使用外部类的变量，可以将内部类设置为 <code>static</code>  以便取消内部类对外部类的引用：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Outer</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 静态内部类</span></span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">Inner</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="12、异常"><a href="#12、异常" class="headerlink" title="12、异常"></a>12、异常</h3><p>所有异常都派生自 <code>Throwable</code>：</p>
+<ul>
+<li><code>Error</code>：系统内部错误，发生时应该停止程序。</li>
+<li><code>Exception</code>：分为 <code>RuntimeException</code>、<code>IOException</code>。程序本身错误是 <code>RuntimeException</code>，<code>IO</code> 错误是 <code>IOException</code>。</li>
+</ul>
+<p>常见 <code>RuntimeException</code>：</p>
+<ul>
+<li>错误类型转换</li>
+<li>数组越界访问</li>
+<li>访问 null 指针</li>
+</ul>
+<p>常见 <code>IOException</code>：</p>
+<ul>
+<li>试图在文件尾部读取数据</li>
+<li>试图打开一个不存在的文件</li>
+<li>给定字符串查找类时类不存在</li>
+</ul>
+<p><code>Error</code> 和 <code>RuntimeException </code> 是非受查异常，<code>IOException</code> 是受查异常，只有受查异常才能抛出。</p>
+<p>异常的处理有两种方法：抛出异常、捕获异常。</p>
+<p><code>try-catch</code> 中可以 <code>catch</code> 多个异常：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    </span><br><span class="line">&#125;<span class="keyword">catch</span> (FileNotFoundException | UnknownHostException) &#123;</span><br><span class="line">    <span class="comment">// 同时捕获多个异常</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>finally</code> 在不论是否捕获异常都会执行，一般用来释放资源，但如果资源实现了 <code>AutoCloseable</code> 接口，可以使用更好的方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 传统的 finally 中释放资源</span></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    <span class="comment">// 打开资源，使用资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    <span class="comment">// 捕获异常</span></span><br><span class="line">&#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="comment">// 释放资源</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 资源实现了 AutoCloseable 接口时更好的释放资源方式</span></span><br><span class="line"><span class="comment">// 在 try 中打开资源，可以同时打开多个资源，当 try 块退出时会自动释放资源</span></span><br><span class="line"><span class="keyword">try</span> (Scanner in = <span class="keyword">new</span> Scanner(<span class="keyword">new</span> FileInputStream(<span class="string">&quot;demo.txt&quot;</span>))) &#123;</span><br><span class="line">    <span class="comment">// 使用资源</span></span><br><span class="line">&#125;<span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">    <span class="comment">// 捕获异常</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="13、泛型"><a href="#13、泛型" class="headerlink" title="13、泛型"></a>13、泛型</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 泛型类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">// 泛型方法，泛型标志放在修饰符后面，返回类型前面</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="function">T <span class="title">getMiddle</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>限定泛型类型：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 限定列表中，类应该放在第一个，接口应该放在后面</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Son</span>&lt;<span class="title">T</span> <span class="keyword">extends</span> <span class="title">Person</span> &amp; <span class="title">Comparable</span> &amp; <span class="title">Serialzable</span>&gt; </span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>类型擦除</code>：虚拟机中没有泛型，泛型类在编译之后会被去除类型，使用限定类型替换，如果没有限定类型则使用 <code>Object</code> 类型替换：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 没有限定泛型类型时</span></span><br><span class="line"><span class="keyword">public</span> clas Pair&lt;T&gt; &#123;</span><br><span class="line">    <span class="keyword">private</span> T lower;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">getLower</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ------&gt; 编译之后</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译之后，擦除类型，因为没有限定类型所以使用 Object 替换</span></span><br><span class="line"><span class="keyword">public</span> clas Pair &#123;</span><br><span class="line">    <span class="keyword">private</span> Object lower;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">getLower</span><span class="params">(Object t)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 有限定泛型类型时</span></span><br><span class="line"><span class="keyword">public</span> clas Pair&lt;T extends Comparable &amp; Serializable&gt; &#123;</span><br><span class="line">    <span class="keyword">private</span> T lower;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> T <span class="title">getLower</span><span class="params">(T t)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ------&gt; 编译之后</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 编译之后，擦除类型，因为有对泛型进行限制所以使用第一个限定类型替换泛型</span></span><br><span class="line"><span class="keyword">public</span> clas Pair &#123;</span><br><span class="line">    <span class="keyword">private</span> Comparable lower;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> Comparable <span class="title">getLower</span><span class="params">(Comparable t)</span> </span>&#123;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因为类型擦除，应该将没有方法的接口放到限定列表的后面。</p>
+<p>桥方法。</p>
+<p>几个注意点：</p>
+<p>泛型的类型不能是基本类型，必须使用包装器：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// error</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">double</span>&gt; </span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ok</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">Double</span>&gt; </span>&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>不能创建泛型类型的数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// error</span></span><br><span class="line">Pair&lt;String&gt;[] table = <span class="keyword">new</span> Pair&lt;String&gt;[<span class="number">10</span>];</span><br></pre></td></tr></table></figure>
+<p>注意，无论 <code>S</code>  和 <code>T</code> 有什么关系，<code>Pair&lt;S&gt;</code> 和 <code>Pair&lt;T&gt;</code> 都没关系：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pair</span>&lt;<span class="title">T</span>&gt; </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SuperClass</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">SonClass</span> <span class="keyword">extends</span> <span class="title">SuperClass</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// error</span></span><br><span class="line">Pair&lt;SuperClass&gt; pair = <span class="keyword">new</span> Pair&lt;SonClass&gt;();</span><br></pre></td></tr></table></figure>
+<p>但是 <code>Pair&lt;SonClass&gt;</code> 一定是 <code>Pair</code> 的子类型：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">air&lt;Manager&gt; managerPair = <span class="keyword">new</span> Pair&lt;&gt;();</span><br><span class="line">Pair pair = managerPair;</span><br></pre></td></tr></table></figure>
+<p><code>通配符类型</code> ？？？</p>
+<h3 id="14、集合"><a href="#14、集合" class="headerlink" title="14、集合"></a>14、集合</h3><p> <code>for-each</code> 循环可以用在任何实现了 <code>Iterable</code> 接口的类上。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Iterator&lt;String&gt; it = c.iterator();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用 remove 之前必须先调用 next</span></span><br><span class="line"><span class="keyword">if</span> (it.hasNext()) &#123;</span><br><span class="line"> 	it.next();</span><br><span class="line">	it.remove();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h3 id="15、并发"><a href="#15、并发" class="headerlink" title="15、并发"></a>15、并发</h3><h3 id="16、打包"><a href="#16、打包" class="headerlink" title="16、打包"></a>16、打包</h3><p>传统的 Java 会打包成一个 <code>applet</code> 程序，可以通过网络下载在浏览器中运行，后来出现了打包成 <code>jar</code> 包。</p>
+<p><code>applet</code> 程序已经基本废弃不用，如今基本使用 <code>jar</code> 打包代码。</p>
+<h4 id="jar"><a href="#jar" class="headerlink" title="jar"></a>jar</h4><p><code>jar</code> 其实就是一个使用 <code>zip</code> 格式压缩的文件，可以包含代码及资源文件。</p>
+<p>打包成 <code>jar</code> 包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打包</span></span><br><span class="line">jar cvf 打包后名称.jar *.class 资源文件名.gif</span><br><span class="line"></span><br><span class="line"><span class="comment"># 打包一个包含清单文件的包</span></span><br><span class="line">jar cfm 打包后名称.jar manifest.mf *.class 资源名.gif</span><br></pre></td></tr></table></figure>
+<p>一般 <code>jar</code> 包中有一个描述文档特征的清单文件 <code>META-INF/MANIFEST.MF</code>，文件分为多个节，开头主节作用于整个 <code>jar</code> 包，下面的命名条目（指定文件、包、URL 都可以作为命名条目）作用于指定条目：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 主节</span></span><br><span class="line">Manifest-Version: 1.0</span><br><span class="line">Sealed: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 命名条目</span></span><br><span class="line">Name: Demo.class</span><br><span class="line"></span><br><span class="line"><span class="comment"># 命名条目</span></span><br><span class="line">Name: com/ifangcy/demo/util</span><br><span class="line">Sealed: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>注意：清单文件最后一行必须以换行符结束。</p>
+<p>要想直接启动 <code>jar</code> 包，在打包时必须指定程序入口或者在清单文件中指定主类：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打包时指定入口</span></span><br><span class="line">jar cvfe 打包后名称.jar com.ifangcy.demo.MyMainClass</span><br><span class="line"></span><br><span class="line"><span class="comment"># 清单中指定主类</span></span><br><span class="line">Main-Class: com.ifangcy.demo.MyMainClass</span><br></pre></td></tr></table></figure>
+<p>启动 <code>jar</code> 包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar 包名.jar</span><br></pre></td></tr></table></figure>
+<p><code>jar</code> 包中的资源如何定位？通过可以访问的 <code>class</code> 文件来定位资源文件，一般可以把资源文件放到类文件文件夹中：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 通过 ResourceTest 的位置来定位资源 about.gif</span></span><br><span class="line"><span class="comment">// 这里会在找到 ResourceTest 类的地方查找 about.gif</span></span><br><span class="line">URL url = ResourceTest.class.getResource(<span class="string">&quot;about.gif&quot;</span>);</span><br><span class="line">Image img = <span class="keyword">new</span> ImageIcon(url).getImage();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里会在找到 ResourceTest 类的子文件夹中查找 about.gif</span></span><br><span class="line"><span class="comment">// 注意，不论那种操作系统都使用 / 分隔符</span></span><br><span class="line">URL url = ResourceTest.class.getResource(<span class="string">&quot;data/about.gif&quot;</span>);</span><br><span class="line">Image img = <span class="keyword">new</span> ImageIcon(url).getImage();</span><br></pre></td></tr></table></figure>
+
+
+<p><code>Properties</code>、<code>Preferences</code> 常用作配置功能，web 开发一般用不到就不详写了。</p>
+<h4 id="applet"><a href="#applet" class="headerlink" title="applet"></a>applet</h4><p><code>applet</code>  是包含在 HTML 页面中的 Java 程序，基本不再使用。</p>
+<h4 id="Java-Web-Start"><a href="#Java-Web-Start" class="headerlink" title="Java Web Start"></a>Java Web Start</h4><h2 id="二、JDBC"><a href="#二、JDBC" class="headerlink" title="二、JDBC"></a>二、JDBC</h2><h2 id="三、JavaWeb"><a href="#三、JavaWeb" class="headerlink" title="三、JavaWeb"></a>三、JavaWeb</h2><p><code>JSP</code> 与 <code>Servlet</code> 是一致的，<code>JSP</code> 最终会被<strong>web 服务器</strong>编译为 <code>Servlet</code>，<strong>web 服务器</strong>上实际运行的是 <code>Servlet</code>。第一次访问 <code>JSP</code> 文件时会比较慢，因为要等待 <code>JSP</code> 编译成 <code>Servlet</code> 文件。 </p>
+<p>一个标准的 Web 应用结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">webapp</span><br><span class="line">	|</span><br><span class="line">	-- META-INF</span><br><span class="line">	|</span><br><span class="line">	-- WEB-INF</span><br><span class="line">	|	|</span><br><span class="line">	|	-- web.xml	<span class="comment"># web 项目配置文件</span></span><br><span class="line">	|	|</span><br><span class="line">	|	-- classes	<span class="comment"># 项目的 .class 文件</span></span><br><span class="line">	|	|</span><br><span class="line">	|	-- lib      <span class="comment"># 项目用到的 jar 包</span></span><br><span class="line">	|</span><br><span class="line">	-- index.jsp	<span class="comment"># jsp 文件在最外层</span></span><br><span class="line">	|</span><br><span class="line">	-- demo.html</span><br><span class="line">	|</span><br><span class="line">	__ index.js</span><br><span class="line">	|</span><br><span class="line">	-- css</span><br><span class="line">	|</span><br><span class="line">	__ img</span><br></pre></td></tr></table></figure>
+<p><code>Servlet 3.0</code> 之前 <code>web.xml</code> 是必须的，之后 <code>web.xml</code> 不再是必需文件，因为可以使用注解。</p>
+<p>项目中的这个 <code>web.xml</code> 文件是项目级的配置，只会影响该项目，web 服务器还会提供一个服务器级的 <code>web.xml</code> （<code>Tomcat</code> 配置文件位于 <code>conf/web.xml</code>）配置文件，作为所有项目共有配置。</p>
+<p><code>web.xml</code> 及注解主要可配置有：</p>
+<ul>
+<li>JSP</li>
+<li>Servlet</li>
+<li>Listener</li>
+<li>Filter</li>
+</ul>
+<h3 id="1、JSP"><a href="#1、JSP" class="headerlink" title="1、JSP"></a>1、JSP</h3><h3 id="2、Servlet"><a href="#2、Servlet" class="headerlink" title="2、Servlet"></a>2、Servlet</h3><p><code>Servlet</code> 生命周期由 web 服务器（比如 Tomcat）来管理，创建 <code>Servlet</code> 实例有两个时机：</p>
+<ul>
+<li>第一次请求到该 <code>Servlet</code> 时</li>
+<li>通过 <code>load-on-startup</code> 配置让启动 web 服务器时就创建该 <code>Servlet</code> 实例，<code>load-on-startup</code> 值越小越先创建</li>
+</ul>
+<p>已创建的 <code>Servelet</code> 会放到容器中，后续再请求到该 <code>Servlet</code> 时不需要重新创建实例。</p>
+<p><code>Servlet 3.0</code> 增加了很多新特性，比如注解配置、web 模块支持、Servlet 异步处理。</p>
+<h4 id="注解配置"><a href="#注解配置" class="headerlink" title="注解配置"></a>注解配置</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.ifangcy.servlets;</span><br><span class="line"></span><br><span class="line"><span class="meta">@WebServlet(</span></span><br><span class="line"><span class="meta">        loadOnStartup = 1,</span></span><br><span class="line"><span class="meta">        name = &quot;helloServlet&quot;,</span></span><br><span class="line"><span class="meta">        urlPatterns = &#123; &quot;/hello&quot; &#125;,</span></span><br><span class="line"><span class="meta">        initParams = &#123;</span></span><br><span class="line"><span class="meta">                @WebInitParam(name=&quot;driver&quot;, value = &quot;com.mysql.cj.jdbc.Driver&quot;),</span></span><br><span class="line"><span class="meta">                @WebInitParam(name = &quot;url&quot;, value = &quot;jdbc:mysql://localhost:3306?database&quot;)</span></span><br><span class="line"><span class="meta">        &#125;</span></span><br><span class="line"><span class="meta">        )</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloServlet</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">service</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        req.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line">        resp.setContentType(<span class="string">&quot;text/html&quot;</span>);</span><br><span class="line">        PrintStream out = <span class="keyword">new</span> PrintStream(resp.getOutputStream());</span><br><span class="line">        out.println(<span class="string">&quot;&lt;html&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;body&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;div&gt;Hello world&lt;/div&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;/body&gt;&quot;</span>);</span><br><span class="line">        out.println(<span class="string">&quot;&lt;/html&gt;&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="web-xml-配置"><a href="#web-xml-配置" class="headerlink" title="web.xml 配置"></a>web.xml 配置</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servlet</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>helloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servlet-class</span>&gt;</span>com.ifangcy.servlets.HelloServlet<span class="tag">&lt;/<span class="name">servlet-class</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">load-on-startup</span>&gt;</span>1<span class="tag">&lt;/<span class="name">load-on-startup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">param-name</span>&gt;</span>driver<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>com.mysql.cj.jdbc.Driver<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">param-name</span>&gt;</span>url<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>jdbc:mysql://localhost:3306?database<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">servlet-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">servlet-name</span>&gt;</span>helloServlet<span class="tag">&lt;/<span class="name">servlet-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/hello<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servlet-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="3、Filter"><a href="#3、Filter" class="headerlink" title="3、Filter"></a>3、Filter</h3><p><code>Filter</code> 是一种加强版的 <code>Servlet</code>，用来对请求进行预处理、对响应进行后处理。<code>Filter</code> 一般用来先对请求预处理，然后把请求交给 <code>Servlet</code>，最后拿到 <code>Servlet</code> 的响应在进行后处理，最后返回响应。</p>
+<p><code>Filter</code> 通常可以用来处理多个 <code>Servlet</code> 中的共有部分，比如记录日志、权限控制等。</p>
+<p><code>Filter</code> 可拦截多个请求或响应，一个请求或响应也可以被多个 <code>Filter</code> 拦截。</p>
+<h4 id="注解配置-1"><a href="#注解配置-1" class="headerlink" title="注解配置"></a>注解配置</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebFilter(</span></span><br><span class="line"><span class="meta">        filterName = &quot;hello&quot;,</span></span><br><span class="line"><span class="meta">        urlPatterns = &#123; &quot;/*&quot; &#125;</span></span><br><span class="line"><span class="meta">)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloFilter</span> <span class="keyword">implements</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(FilterConfig filterConfig)</span> <span class="keyword">throws</span> ServletException </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">        <span class="comment">// 这里拦截请求，处理请求</span></span><br><span class="line">        <span class="comment">// 注意这个方法必须调用，否则请求无法放行到 Servlet 中</span></span><br><span class="line">        filterChain.doFilter(servletRequest, servletResponse);</span><br><span class="line">        <span class="comment">// 这里拦截响应，处理响应</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="web-xml-配置-1"><a href="#web-xml-配置-1" class="headerlink" title="web.xml 配置"></a>web.xml 配置</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>com.ifangcy.filters.HelloFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>hello<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="4、Listener"><a href="#4、Listener" class="headerlink" title="4、Listener"></a>4、Listener</h3><p><code>Listener</code> 用来监听 web 容器内部的事件，比如 web 应用被启动、web 应用停止、用户 session 开始、用户 session 结束、用户请求到达等，这些内容本来对开发者是不可见的。</p>
+<p>常用的 web 事件监听器接口有如下：</p>
+<ul>
+<li>ServletContextListener：监听 web 容器的启动和关闭</li>
+<li>ServletContextAttributeListener：监听 ServletContext 范围内属性改变</li>
+<li>ServletRequestListener：监听用户请求，可以用来实现系统日志</li>
+<li>ServletRequestAttributeListener：监听 ServletRequest 范围内属性改变</li>
+<li>HttpSessionListener：监听用户 session 开始和结束，可以用来实现监听在线用户数</li>
+<li>HttpSessionAttributeListner：监听 HttpSession 范围内属性改变</li>
+</ul>
+<p><code>Listener</code> 配置无需参数。</p>
+<h4 id="注解配置-2"><a href="#注解配置-2" class="headerlink" title="注解配置"></a>注解配置</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@WebListener</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloListener</span> <span class="keyword">implements</span> <span class="title">ServletContextListener</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// web 容器启动</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextInitialized</span><span class="params">(ServletContextEvent sce)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// web 容器关闭</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">contextDestroyed</span><span class="params">(ServletContextEvent sce)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="web-xml-配置-2"><a href="#web-xml-配置-2" class="headerlink" title="web.xml 配置"></a>web.xml 配置</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">listener</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">listener-class</span>&gt;</span>com.ifangcy.listeners.HelloListener<span class="tag">&lt;/<span class="name">listener-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">listener</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="四、Maven"><a href="#四、Maven" class="headerlink" title="四、Maven"></a>四、Maven</h2><p>在 <code>Maven</code> 打包时不会把 <code>src/test</code> 目录下的测试代码打包进最终包。</p>
+<p><code>Maven</code> 默认打包成  <code>jar</code> 包，默认打包成的 <code>jar</code> 并不能直接运行，因为打包出的 <code>MATA-INF/MANIFEST.MF</code> 文件中没有指定 <code>Main-Class</code>，如果想要直接运行该包需要配置在配置中使用 <code>maven-shade-plugin</code> 配置主类：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-shade-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">phase</span>&gt;</span>package<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goal</span>&gt;</span>shade<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">transformers</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">transformer</span> <span class="attr">implementation</span>=<span class="string">&quot;org.apache.maven.plugins.shade.resource.MainfestResourceTransformer&quot;</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">mainClass</span>&gt;</span>com.ifangcy.demo.HelloWorld<span class="tag">&lt;/<span class="name">mainClass</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">transformer</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">transformers</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="1、基础"><a href="#1、基础" class="headerlink" title="1、基础"></a>1、基础</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p><code>Maven</code> 安装目录：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">|---bin	 <span class="comment"># maven 命令脚本</span></span><br><span class="line">|---boot <span class="comment"># maven 自带的类加载器</span></span><br><span class="line">|---conf</span><br><span class="line">	|---settings.xml <span class="comment"># maven 全局配置文件</span></span><br><span class="line">|---lib  <span class="comment"># maven 依赖包</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>安装之后，把  <code>$&#123;M2_HOME&#125;/conf</code> 下的 <code>settings.xml</code> 配置文件复制一份到用户目录下 <code>~/.m2/settings.xml</code>，作为用户级的配置文件。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~/.m2/---repository	  <span class="comment"># 下载包存放</span></span><br><span class="line">	|---settings.xml  <span class="comment"># 配置文件</span></span><br></pre></td></tr></table></figure>
+<p>在 <code>settings.xml</code> 添加阿里云镜像：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/repositories/central/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvn dependency:list</span><br><span class="line">mvn dependency:tree</span><br><span class="line">mvn dependency:analyze</span><br></pre></td></tr></table></figure>
+<p>当插件的 <code>groupId</code> 不是 <code>org.apache.maven.plugins</code> 和 <code>org.codehaus.mojo</code> 时，必须在 <code>~/.m2/settings.xml</code> 中配置上插件的 <code>groupId</code> 才能通过命令行使用插件：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line">   		<span class="tag">&lt;<span class="name">pluginGroup</span>&gt;</span>插件的 groupId<span class="tag">&lt;/<span class="name">pluginGroup</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h4 id="Maven-项目结构"><a href="#Maven-项目结构" class="headerlink" title="Maven 项目结构"></a>Maven 项目结构</h4><p> <code>Maven</code> 项目必须遵守固定的结构才能被 <code>Maven</code> 编译打包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.---src</span><br><span class="line">	|---main	<span class="comment"># 项目主要代码，资源目录</span></span><br><span class="line">		|---java	<span class="comment"># 项目源码</span></span><br><span class="line">		|---resources	<span class="comment"># 项目资源</span></span><br><span class="line">		|---webapp	<span class="comment"># web项目固定</span></span><br><span class="line">			|---WEB-INF 	<span class="comment"># web项目固定</span></span><br><span class="line">				|---web.xml  <span class="comment"># web项目配置</span></span><br><span class="line">	|---<span class="built_in">test</span>	<span class="comment"># 项目测试代码</span></span><br><span class="line">|---pom.xml		<span class="comment"># maven 配置文件</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>源码目录：<code>src/main/java/</code></li>
+<li>包输出目录：<code>target/</code></li>
+<li>编译输出目录：<code>target/classes/</code></li>
+<li>默认打包方式：<code>jar</code></li>
+</ul>
+<p>一般不会手动去创建这样的项目结构，可以使用 <code>Archetype</code>  自动生成项目骨架，即使是 <code>IDEA</code> 也是通过 <code>Archetype</code> 命令生成的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn archetype:generate</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h4 id="坐标"><a href="#坐标" class="headerlink" title="坐标"></a>坐标</h4><p>项目必须定义坐标，引入的第三方包也是通过坐标引入。</p>
+<p>项目坐标包括：</p>
+<ul>
+<li><code>groupId</code>：对应到项目，比如 <code>com.ifangcy.mall</code></li>
+<li><code>artifactId</code>：对应到项目的模块，比如 <code>com.ifangcy.mall.account</code></li>
+<li><code>version</code>：项目版本</li>
+<li><code>packaging</code>：项目打包方式，默认（不填时）<code>jar</code>，可选 <code>war</code>、<code>pom</code></li>
+<li><code>classifier</code>：生成打包时的一些附属构件，需要配合插件</li>
+</ul>
+<p>打包生成的包名为 <code>artifactId-version[-classifier].packaging</code>。</p>
+<p>引入的第三方包坐标包括：</p>
+<ul>
+<li><code>groupId</code>：基本坐标，必填</li>
+<li><code>artifactId</code>：基本坐标，必填</li>
+<li><code>version</code>：基本坐标，非必填，如果不填则使用依赖最新发布版本</li>
+<li><code>type</code>：对应 <code>packaging</code>，项目类型，默认 <code>jar</code>，非必填</li>
+<li><code>scope</code>：依赖范围，非必填</li>
+<li><code>optional</code>：是否可选，非必填</li>
+<li><code>exclusions</code>：排除依赖，非必填</li>
+</ul>
+<h4 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h4><h5 id="classpath-与依赖范围"><a href="#classpath-与依赖范围" class="headerlink" title="classpath 与依赖范围"></a>classpath 与依赖范围</h5><p><code>classpath</code> 可以看做运行环境，<code>Maven</code> 使用三套环境/<code>classpath</code>隔离依赖：</p>
+<ul>
+<li>测试 <code>classpath</code></li>
+<li>编译 <code>classpath</code></li>
+<li>运行 <code>classpath</code></li>
+</ul>
+<p>依赖通过指定 <code>scope</code> 来决定放到哪个 <code>classpath</code> 环境中：</p>
+<ul>
+<li><code>compile</code>：编译依赖范围，默认值，三种 <code>classpath</code> 环境中都会放入依赖</li>
+<li><code>test</code>：测试依赖范围，只会放入测试 <code>classpath</code> 环境中，例如 <code>JUnit</code></li>
+<li><code>provided</code>：依赖范围，编译、测试 <code>classpath</code> 环境中会放入依赖，例如 <code>servlet-api</code></li>
+<li><code>runtime</code>：运行时依赖范围，测试、运行 <code>classpath</code> 环境中会放入依赖，例如 <code>JDBC</code> 驱动</li>
+<li><code>system</code>：系统依赖范围，与 <code>provided</code> 以来范围一致，区别是 <code>system</code> 需要指定 <code>systemPath</code> 从本地获取依赖而不是 <code>Maven</code> 仓库</li>
+<li><code>import</code>：不影响三种 <code>classpath</code> 环境，在使用 <code>dependencyManagement </code> 时可能用到</li>
+</ul>
+<h5 id="传递依赖"><a href="#传递依赖" class="headerlink" title="传递依赖"></a>传递依赖</h5><p>直接依赖如果还有其他依赖，这时候依赖范围怎么处理？</p>
+<p>最左边一列为第一直接依赖，第一行为第二直接依赖。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>compile</th>
+<th>test</th>
+<th>provided</th>
+<th>runtime</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>compile</td>
+<td>compile</td>
+<td>-</td>
+<td>-</td>
+<td>runtime</td>
+</tr>
+<tr>
+<td>test</td>
+<td>test</td>
+<td>-</td>
+<td>-</td>
+<td>test</td>
+</tr>
+<tr>
+<td>provided</td>
+<td>provided</td>
+<td>-</td>
+<td>provided</td>
+<td>provided</td>
+</tr>
+<tr>
+<td>runtime</td>
+<td>runtime</td>
+<td>-</td>
+<td>-</td>
+<td>runtime</td>
+</tr>
+</tbody></table>
+<p>如果依赖范围不包括运行 <code>classpath</code>，则该依赖不会被放到最终的打包中。</p>
+<h5 id="依赖调解"><a href="#依赖调解" class="headerlink" title="依赖调解"></a>依赖调解</h5><p>对于多个依赖最终依赖了一个包的不同版本时怎么处理？</p>
+<p>两个原则：</p>
+<ul>
+<li>路劲最近优先：<code>A-&gt;B-&gt;C(1.0)</code> 与 <code>A-&gt;C(2.0)</code> 因为第二个路径更近，所以 <code>C</code> 导入 <code>2.0</code> 版本</li>
+<li>第一声明优先：同样长度的依赖，在 <code>POM</code> 中先声明的优先</li>
+</ul>
+<h3 id="2、仓库"><a href="#2、仓库" class="headerlink" title="2、仓库"></a>2、仓库</h3><p>依赖下载到本地的仓库下 <code>~/.m2/repository/</code>，路径为 <code>groupId/artifactId/version/artifactId-version.packaging</code>。</p>
+<p>仓库分为本地仓库、远程仓库，私服也是一种远程仓库。</p>
+<p>国内一般需要配置远程仓库的镜像，在 <code>~/.m2/settings.xml</code> 添加镜像：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/repositories/central/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这个镜像对当前用户所有项目都生效。</p>
+<p>一般来说，有的项目需要特定的远程仓库，可以在项目 <code>pom.xml</code> 中配置项目范围的远程仓库：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>jboss<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>JBoss Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repository.jboss.com/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">layout</span>&gt;</span>default<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这种配置只对当前项目有效。</p>
+<p>有的仓库为了安全需要认证才能访问，认证信息的配置必须放到 <code>~/.m2/settings.xml</code> 中，不能放到项目 <code>pom.xml</code> 中（放在项目中会被提交到版本控制中，不安全）：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>JBoss Respository<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">username</span>&gt;</span>username<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">password</span>&gt;</span>password<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p><code>快照版本</code>：指的是 <code>version</code> 指定为 <code>1.1-SNAPSHOT</code> 这样形式的包。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.ifangcy.mavendemo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mavendemo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!-- 快照版本 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>war<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>快照版本在每次打包时 <code>Maven</code> 会自动为项目版本加上时间戳，生成形如 <code>1.1-20201212.221212-12</code> 这样的版本号。</p>
+<p>快照版本的依赖每次在编译时都会自动检查是否有最新快照版本可下载，确保使用最新快照版。</p>
+<h3 id="3、生命周期与插件"><a href="#3、生命周期与插件" class="headerlink" title="3、生命周期与插件"></a>3、生命周期与插件</h3><p> <code>Maven</code> 把构建过程抽象成一整套抽象的生命周期，每个生命周期都可以完成一定的任务，这些任务都交给插件来完成，<code>Maven</code> 已经自带了每个生命周期的默认插件，当然这些插件是可以随时替换的。</p>
+<p>对于整个构建过程，<code>Maven</code> 抽象出了三套生命周期：<code>clean</code>、<code>default</code>、<code>site</code>。每套生命周期内部又分为多个阶段，在一套生命周期内部的阶段是有顺序的，后面的阶段依赖前面的阶段，但是三套生命周期是互相独立的，在不同生命周期的阶段是没有依赖关系。</p>
+<p><code>clean</code> 生命周期是负责清理项目，主要阶段：</p>
+<ul>
+<li><code>pre-clean</code></li>
+<li><code>clean</code></li>
+<li><code>post-clean</code></li>
+</ul>
+<p><code>default</code> 生命周期是真正的构建，主要阶段：</p>
+<ul>
+<li><code>validate</code></li>
+<li><code>initialize</code></li>
+<li><code>generate-sources</code></li>
+<li><code>process-sources</code></li>
+<li><code>generate-resources</code></li>
+<li><code>process-resources</code></li>
+<li><code>compile</code></li>
+<li><code>process-classes</code></li>
+<li><code>generate-test-sources</code></li>
+<li><code>process-test-sources</code></li>
+<li><code>generate-test-resources</code></li>
+<li><code>process-test-resources</code></li>
+<li><code>test-compile</code></li>
+<li><code>process-test-classes</code></li>
+<li><code>test</code></li>
+<li><code>prepare-package</code></li>
+<li><code>package</code></li>
+<li><code>pre-integration-test</code></li>
+<li><code>integration-test</code></li>
+<li><code>post-integration-test</code></li>
+<li><code>verify</code></li>
+<li><code>install</code></li>
+<li><code>deploy</code></li>
+</ul>
+<p><code>site</code> 生命周期是用于建立和发布站点，主要阶段：</p>
+<ul>
+<li><code>pre-site</code></li>
+<li><code>site</code></li>
+<li><code>post-site</code></li>
+<li><code>site-deploy</code></li>
+</ul>
+<p>执行指定任务的方式就是调用特定的 <code>Maven</code> 生命周期阶段，比如 <code>mvn clean deploy</code> 调用 <code>clean</code> 生命周期的 <code>clean</code> 阶段、<code>default</code> 生命周期的 <code>deploy</code> 阶段。</p>
+<p> 如上所述，生命周期的阶段的任务由插件来完成，但阶段与插件并不是直接对应的，而是<strong>阶段与插件目标</strong>直接对应，而且一个阶段可能对应多个目标，多个目标的执行顺序是按照声明顺序执行。</p>
+<p>所谓的插件目标就是插件可以完成的工作，通常来说一个插件可以完成多种工作，每种工作都叫做一个目标，如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">maven-dependency-plugin:analyze</span><br><span class="line">maven-dependency-plugin:tree</span><br><span class="line">maven-dependency-plugin:list</span><br></pre></td></tr></table></figure>
+<p>表示 <code>maven-dependency-plugin</code> 有三个目标：<code>analyze</code>、<code>tree</code>、<code>list</code>。</p>
+<p>只有 <code>org.apache.maven.plugins</code> 和 <code>org.codehaus.mojo</code> 两个 <code>groupId</code> 下的插件才支持命令行调用，如果不是这两个 <code>groupId</code> 下的插件想要使用命令，需要修改 <code>~/.m2/settings.xml</code> 配置：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 这里配置插件的 groupId --&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">pluginGroup</span>&gt;</span>org.mortbay.jetty<span class="tag">&lt;/<span class="name">pluginGroup</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<p>自定义阶段对应的目标：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 插件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-source-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">executions</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">execution</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>attach-sources<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 绑定阶段 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">phase</span>&gt;</span>verify<span class="tag">&lt;/<span class="name">phase</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">goals</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 对应目标 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">goal</span>&gt;</span>jar-no-fork<span class="tag">&lt;/<span class="name">goal</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">goals</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">execution</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">executions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>phase</code> 并不是必须的，一般插件会默认指定绑定阶段，所以不显式指定也可以。</p>
+<p>每个插件都可以通过  <code>pom.xml</code> 配置参数，有的插件还可以通过命令行配置参数，插件的每个目标也可以单独配置参数：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 配置参数 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>依赖的远程仓库和插件的远程仓库是不同的，在 <code>pom.xml</code> 中配置插件的远程仓库，一般不需要自己配置插件仓库：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">pluginRepositories</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>central<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Maven Plugin Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">layout</span>&gt;</span>default<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">updatePolicy</span>&gt;</span>never<span class="tag">&lt;/<span class="name">updatePolicy</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginRepository</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">pluginRepositories</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p><code>Maven</code> 有一个超级 <code>pom.xml</code> 文件，所有项目的 <code>pom.xml</code> 都继承自该超级 <code>pom.xml</code> 文件，该文件路径 <code>$&#123;M2_HOME&#125;/lib/maven-model-builder-x.x.x.jar/org/apache/maven/model/pom-4.0.0.xml</code>。这个超级 <code>pom.xml</code> 中指定了每个默认核心插件的版本号，所以即使项目中没有指定核心插件版本也可以，当然其他第三方插件是不行的。</p>
+<h3 id="4、聚合与继承"><a href="#4、聚合与继承" class="headerlink" title="4、聚合与继承"></a>4、聚合与继承</h3><p><code>聚合</code>：指的是把一个项目分成多个模块，把这些模块聚合到一起。</p>
+<p><code>继承</code>：指的是把多个模块相同的依赖、插件抽取到一起。</p>
+<p>聚合模块仅帮助聚合其他模块，本身不包含实质性内容。</p>
+<p>聚合模块的 <code>packaging</code> 必须使用 <code>pom</code>。</p>
+<p>有的设计中聚合模块、所有模块的父模块是分开成两个模块的，有的设计中聚合模块、所有模块的父模块作为一个模块，我们采取第二种方式。</p>
+<p>子模块会自动继承父模块的 <code>groupId</code> 和 <code>version</code>。</p>
+<p>父模块/聚合模块 <code>pom.xml</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.ifangcy.mavendemo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mavendemo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">&lt;!-- 子模块 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">modules</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">module</span>&gt;</span>module1<span class="tag">&lt;/<span class="name">module</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">module</span>&gt;</span>module2<span class="tag">&lt;/<span class="name">module</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">modules</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>模块1 <code>pom.xml</code>：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 父模块 --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">parent</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.ifangcy.mavendemo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mavendemo<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">  <span class="comment">&lt;!-- 只需指定 artifactId，会自动继承父模块的 groupId、version --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>module1<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>父模块可以被子模块继承的元素有：</p>
+<ul>
+<li><code>groupId</code></li>
+<li><code>version</code></li>
+<li><code>description</code></li>
+<li><code>organization</code></li>
+<li><code>inceptionYear</code></li>
+<li><code>url</code></li>
+<li><code>developers</code></li>
+<li><code>contributors</code></li>
+<li><code>distributionManagement</code></li>
+<li><code>issueManagement</code></li>
+<li><code>ciManagement</code></li>
+<li><code>scm</code></li>
+<li><code>mailingLists</code></li>
+<li><code>properties</code></li>
+<li><code>dependencies</code></li>
+<li><code>dependencyManagement</code></li>
+<li><code>pluginManagement</code></li>
+<li><code>repositories</code></li>
+<li><code>build</code></li>
+<li><code>reporting</code></li>
+</ul>
+<h4 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h4><p>所有模块的依赖都可以放到父模块的 <code>dependencies</code> 中，但是放到 <code>dependencies</code> 中的依赖所有模块都会全部继承，即使该模块不需要这个依赖。问题在于如果即让父模块统一管理依赖，又能让子模块按需导入依赖。</p>
+<p><code>dependencyManagement</code> 就是为了解决这个问题而存在，它 <strong>不会给父模块和子模块导入依赖</strong>，但子模块却可以继承这些依赖。</p>
+<p>父模块：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencyManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-jcl<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.11.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencyManagement</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>子模块：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>父模块指定两个依赖 <code>junit</code>、<code>spring-jcl</code>，子模块只需要一个 <code>junit</code> 而不需要 <code>spring-jcl</code>，子模块指定依赖时不需要指定版本，版本由父模块统一管理。</p>
+<p>父模块实际不会导入任何依赖，子模块只会导入 <code>junit</code> 一个依赖。</p>
+<h4 id="插件管理"><a href="#插件管理" class="headerlink" title="插件管理"></a>插件管理</h4><p>插件的管理和依赖一样，使用 <code>pluginManagement</code>，而且插件的配置参数等也会一并继承。</p>
+<p>父模块：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">pluginManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>子模块：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="5、使用-Maven-测试代码"><a href="#5、使用-Maven-测试代码" class="headerlink" title="5、使用 Maven 测试代码"></a>5、使用 Maven 测试代码</h3><p><code>Maven</code> 运行测试代码主要通过 <code>maven-surefire-plugin</code> 与 <code>JUnit/TestNG</code> 集成，<code>Maven</code> 本身不提供测试功能，通过执行生命周期的测试阶段来执行 <code>JUnit</code> 或 <code>TestNG</code> 测试用例。</p>
+<p>运行 <code>mvn test</code> 时 <code>maven-surefire-plugin</code> 插件自动执行测试源码 <code>src/test/java</code> 路径下所以符合如下命名的测试代码：</p>
+<ul>
+<li><code>**/Test*.java</code></li>
+<li><code>**/*Test.java</code></li>
+<li><code>**/*TestCase.java</code></li>
+</ul>
+<p>跳过运行测试代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package -DskipTests</span><br></pre></td></tr></table></figure>
+<p>或在 <code>pom.xml</code> 中配置：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">skipTests</span>&gt;</span>true<span class="tag">&lt;/<span class="name">skipTests</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>要想不运行测试代码，同时也不编译测试代码：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package -Dmaven.test.skip=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p> 或 <code>pom.xml</code> 中配置：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.8.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">skip</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">skip</span>&gt;</span>true<span class="tag">&lt;/<span class="name">skip</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>指定运行特定测试代码，可以使用明确指定、逗号分隔、匹配符等多种方式：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mvn <span class="built_in">test</span> -Dtest=RandomGeneratorTest</span><br><span class="line">mvn <span class="built_in">test</span> -Dtest=RandomGeneratorTest,AccountCaptchaServiceTest</span><br><span class="line">mvn tset -Dtest=Random*Test</span><br></pre></td></tr></table></figure>
+
+
+<p><code>maven-surefire-plugin</code> 会自动在 <code>target/surefire-reports</code> 下生成错误报告。</p>
+<p>如果想生成测试覆盖率报告，可以使用 <code>Cobertura</code> 实现，加入插件 <code>cobertura-maven-plugin</code> 使用命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn cobertura:cobertura</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="6、Maven-构建-war-包"><a href="#6、Maven-构建-war-包" class="headerlink" title="6、Maven 构建 war 包"></a>6、Maven 构建 war 包</h3><p>Web 应用目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">war</span><br><span class="line">  |-META-INF</span><br><span class="line">  |-WEB-INF</span><br><span class="line">  |		|</span><br><span class="line">  |		|-web.xml	<span class="comment"># web 配置</span></span><br><span class="line">  |		|-classes	<span class="comment"># 源码编译 class</span></span><br><span class="line">  |		|-lib		<span class="comment"># 依赖包</span></span><br><span class="line">  |		</span><br><span class="line">  |-index.html</span><br><span class="line">  |-login.jsp</span><br><span class="line">  |-img</span><br><span class="line">  |-css</span><br><span class="line">  |-js</span><br></pre></td></tr></table></figure>
+<p>在 Web 容器中运行时，<code>clases</code> 和 <code>lib</code> 目录会被加入到 <code>classpath</code> 中。</p>
+<p>Web 项目的打包必须为 <code>war</code>，项目目录结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">project</span><br><span class="line">	|</span><br><span class="line">	|-pom.xml</span><br><span class="line">	|-src</span><br><span class="line">	|	|-main</span><br><span class="line">	|	|	|-java				<span class="comment"># 源码目录</span></span><br><span class="line">	|	|	|-resources			<span class="comment"># 资源目录</span></span><br><span class="line">	|	|	|-webapp			<span class="comment"># web 项目特有目录</span></span><br><span class="line">	|	|	|	|-WEB-INF</span><br><span class="line">    |	|	|	|	|-web.xml	<span class="comment"># web 配置</span></span><br><span class="line">    |	|	|	|-img</span><br><span class="line">    |	|	|	|-css</span><br><span class="line">    |	|	|	|-js</span><br><span class="line">    |	|	|	|-index.html</span><br><span class="line">    |	|	|	|-login.jsp</span><br><span class="line">    |	|-<span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+<p>Web 项目比起普通 <code>jar</code> 项目特殊在多了一个 <code>webapp</code> 目录，对应打包后的 Web 应用。<code>Maven</code> 在打包时会把依赖 <code>jar</code> 文件复制到打包的 <code>war/WEB-INF/lib</code> 中。</p>
+<p>一般 <code>Web</code> 项目 <code>pom.xml</code> 中会特别配置 <code>finalName</code> 来指定最终打包名，替代默认的 <code>artifactId-version.packaging</code> 格式的打包名。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>finalName<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>常见的，Web 项目中 <code>src/main/resources</code> 和 <code>src/main/webapp</code> 中都可能有资源文件，但是打包后这些资源文件在  <code>war</code> 包中的位置是不同的。<code>src/main/resources</code> 下的资源文件打包后位于 <code>war/WEB-INF/classes</code> 目录下（也就是会放到应用的 <code>classpath</code> 中），<code>src/main/webapp</code> 下的资源文件打包后位于 <code>war/</code> 根目录下（这些资源不会被放到 <code>classpath</code> 中，一般称为 web 资源比如 <code>css</code>、<code>js</code>、<code>img</code> 等）。</p>
+<h4 id="内嵌热部署"><a href="#内嵌热部署" class="headerlink" title="内嵌热部署"></a>内嵌热部署</h4><p>Web 开发中，每次修改都需要重新打包，部署到容器中查看效果。</p>
+<p>可以使用内嵌容器的方式直接在项目中启动容器查看。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mortbay.jetty<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jetty-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>7.6.13.v20130916<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">             <span class="comment">&lt;!-- 每隔10秒扫描一次项目，如果发生更改自动热部署 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">scanIntervalSeconds</span>&gt;</span>10<span class="tag">&lt;/<span class="name">scanIntervalSeconds</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">webAppConfig</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 访问路径 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">contextPath</span>&gt;</span>/api<span class="tag">&lt;/<span class="name">contextPath</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">webAppConfig</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>因为该插件 <code>groupId</code> 是 <code>org.mortbay.jetty</code>  ，为了在命令行中使用该插件，需要修改下 <code>~/.m2/settings.xml</code>：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line">   		<span class="tag">&lt;<span class="name">pluginGroup</span>&gt;</span>org.mortbay.jetty<span class="tag">&lt;/<span class="name">pluginGroup</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">pluginGroups</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在命令中启动容器：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mvn jetty:run  <span class="comment"># 默认使用 8080 端口</span></span><br><span class="line">mvn jetty:run -Djetty.port=9999  <span class="comment"># 指定 9999 端口</span></span><br></pre></td></tr></table></figure>
+
+
+<h4 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h4><p>可以使用 <code>Cargo</code> 将项目部署到本地或远程容器。</p>
+<p><code>Cargo</code> 有两种部署方式：</p>
+<ul>
+<li><code>standalone</code>：把本地容器内容复制一份到指定目录下，然后把项目部署到该目录下</li>
+<li><code>existing</code>：把项目部署到本地容器目录下，推荐</li>
+</ul>
+<h5 id="standalone-模式部署"><a href="#standalone-模式部署" class="headerlink" title="standalone 模式部署"></a>standalone 模式部署</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.cargo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cargo-maven2-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">container</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器类型 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">containerId</span>&gt;</span>tomcat6x<span class="tag">&lt;/<span class="name">containerId</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器安装目录 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">home</span>&gt;</span>/etc/tomcat6<span class="tag">&lt;/<span class="name">home</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">container</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 部署模式 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">type</span>&gt;</span>standalone<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 把 tomcat 目录复制一份到 target/tomcat6x 下 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">home</span>&gt;</span>$&#123;project.build.directory&#125;/tomcat6x<span class="tag">&lt;/<span class="name">home</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!-- 端口 --&gt;</span></span><br><span class="line">                	<span class="tag">&lt;<span class="name">cargo.servlet.port</span>&gt;</span>8080<span class="tag">&lt;/<span class="name">cargo.servlet.port</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>同样的，需要修改 <code>~/.m2/settings.xml</code> 以便使用命令。</p>
+<p>使用：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn cargo:start</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="existing-模式部署"><a href="#existing-模式部署" class="headerlink" title="existing 模式部署"></a>existing 模式部署</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.cargo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cargo-maven2-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">container</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器类型 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">containerId</span>&gt;</span>tomcat6x<span class="tag">&lt;/<span class="name">containerId</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器安装目录 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">home</span>&gt;</span>/etc/tomcat6<span class="tag">&lt;/<span class="name">home</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">container</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 部署模式 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">type</span>&gt;</span>existing<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器安装目录 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">home</span>&gt;</span>/etc/tomcat6<span class="tag">&lt;/<span class="name">home</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!-- 端口 --&gt;</span></span><br><span class="line">                	<span class="tag">&lt;<span class="name">cargo.servlet.port</span>&gt;</span>8080<span class="tag">&lt;/<span class="name">cargo.servlet.port</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<h5 id="部署到远程容器"><a href="#部署到远程容器" class="headerlink" title="部署到远程容器"></a>部署到远程容器</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.codehaus.cargo<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cargo-maven2-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">container</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 容器类型 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">containerId</span>&gt;</span>tomcat6x<span class="tag">&lt;/<span class="name">containerId</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 远程容器 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">type</span>&gt;</span>remote<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">container</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="comment">&lt;!-- 远程运行中的容器 --&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">type</span>&gt;</span>runtime<span class="tag">&lt;/<span class="name">type</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!-- 配置 --&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">cargo.remote.username</span>&gt;</span>root<span class="tag">&lt;/<span class="name">cargo.remote.username</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">cargo.remote.password</span>&gt;</span>123456<span class="tag">&lt;/<span class="name">cargo.remote.password</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">cargo.tomcat.manager.url</span>&gt;</span>http://localhost:8080/manager<span class="tag">&lt;/<span class="name">cargo.tomcat.manager.url</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>部署：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn cargo:deploy</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="7、版本管理"><a href="#7、版本管理" class="headerlink" title="7、版本管理"></a>7、版本管理</h3><p>版本约定：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;主版本&gt;.&lt;次要版本&gt;.&lt;增量版本&gt;-&lt;里程碑版本&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>主版本：架构重大变化</li>
+<li>次要版本：较大范围功能增加、变化，bug修复</li>
+<li>增量版本：bug修复</li>
+<li>里程碑版本：非稳定版，需要测试</li>
+</ul>
+<p>使用 <code>maven-release-plugin</code> 管理版本</p>
+<h3 id="8、灵活构建"><a href="#8、灵活构建" class="headerlink" title="8、灵活构建"></a>8、灵活构建</h3><h4 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h4><p><code>Maven</code> 中可使用6中属性：</p>
+<ul>
+<li>内置属性：主要就是两个，<code>$&#123;basedir&#125;</code> 表示项目根目录（也就是 <code>pom.xml</code> 所在目录），<code>$&#123;version&#125;</code> 项目版本</li>
+<li>POM 属性：<code>pom.xml</code> 文件中每个元素都可以作为属性使用，比如 <code>&lt;project&gt;&lt;artifactId&gt;</code> 可以通过 <code>$&#123;project.artifactId&#125;</code> 使用</li>
+<li>Settings 属性：和 POM 属性类似，<code>settings.xml</code>  中每个元素也可以作为属性使用，如 <code>$&#123;settings.localRepository&#125;</code></li>
+<li>自定义属性：在 <code>pom.xml</code> 的 <code>&lt;properties&gt;</code> 中定义属性</li>
+<li>Java 系统属性：Java 系统属性可以通过属性使用，比如 <code>$&#123;user.home&#125;</code></li>
+<li>环境变量属性：所有环境变量也可以通过 <code>env.</code> 开头属性使用，比如 <code>$&#123;env.JAVA_HOME&#125;</code></li>
+</ul>
+<p>常用 POM 属性：</p>
+<ul>
+<li><code>$&#123;project.build.sourceDirectory&#125;</code></li>
+<li><code>$&#123;project.build.testSourceDirectory&#125;</code></li>
+<li><code>$&#123;project.build.directory&#125;</code></li>
+<li><code>$&#123;project.outputDirectory&#125;</code></li>
+<li><code>$&#123;project.testOutputDirectory&#125;</code></li>
+<li><code>$&#123;project.groupId&#125;</code></li>
+<li><code>$&#123;project.artifactId&#125;</code></li>
+<li><code>$&#123;project.version&#125;</code></li>
+<li><code>$&#123;project.build.finalName&#125;</code></li>
+</ul>
+<h4 id="环境隔离"><a href="#环境隔离" class="headerlink" title="环境隔离"></a>环境隔离</h4><h5 id="资源文件过滤"><a href="#资源文件过滤" class="headerlink" title="资源文件过滤"></a>资源文件过滤</h5><p><code>Maven</code> 对资源文件的处理知识在打包后把资源文件复制到编译输出目录中，这个过程是由插件 <code>maven-resources-plugin</code> 实现的，并不会主动对资源文件中使用到的 <code>Maven</code> 属性进行处理。</p>
+<p>要想让资源文件中的 <code>Maven</code> 属性生效，需要修改插件配置开启资源过滤，这个配置在超级 <code>POM</code> 中（<code>$&#123;M2_HOME&#125;/lib/maven-model-builder.jar/org/apache/maven/model/pom.xml</code>）：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">resources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">directory</span>&gt;</span>$&#123;project.basedir&#125;/src/main/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 对该资源进行过滤，默认没有开启 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resources</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">testResources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">testResource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">directory</span>&gt;</span>$&#123;project.basedir&#125;/src/test/resources<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 对该资源进行过滤，默认没有开启 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">testResource</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">testResources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>进行资源过滤之后，资源文件中就可以使用 <code>Maven</code> 属性，</p>
+<h5 id="web-资源过滤"><a href="#web-资源过滤" class="headerlink" title="web 资源过滤"></a>web 资源过滤</h5><p>对于 web 资源（位于 <code>src/main/webapp</code> 下，一般为 <code>css</code>、<code>js</code>、<code>img</code> 等），有时候可能也需要不同环境使用不同资源，可以通过配置 <code>maven-war-plugin</code> 实现过滤：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-war-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">webResources</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">resource</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">filtering</span>&gt;</span>true<span class="tag">&lt;/<span class="name">filtering</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">directory</span>&gt;</span>src/main/webapp<span class="tag">&lt;/<span class="name">directory</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">includes</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.css<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">include</span>&gt;</span>**/*.js<span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">includes</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">resource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">webResources</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p><code>Maven</code> 对不同环境使用不同配置通过 <code>profile</code> 实现，一个 <code>profile</code> 就是一个环境。</p>
+<p><code>profile</code> 可以配置的位置有：</p>
+<ul>
+<li><code>pom.xml</code>：只对当前项目生效，推荐</li>
+<li><code>~/.m2/settings.xml</code>：对所有项目生效</li>
+<li><code>$&#123;M2_HOME&#125;/conf/settings.xml</code>：对所有项目生效</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>dev<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- 默认激活 --&gt;</span></span><br><span class="line">    	<span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span>  </span><br><span class="line">    <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">css.ref</span>&gt;</span>blue.css<span class="tag">&lt;/<span class="name">css.ref</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.username</span>&gt;</span>root<span class="tag">&lt;/<span class="name">db.username</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.password</span>&gt;</span>123456<span class="tag">&lt;/<span class="name">db.password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.url</span>&gt;</span>http://localhost:3306?db<span class="tag">&lt;/<span class="name">db.url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>prod<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">css.ref</span>&gt;</span>red.css<span class="tag">&lt;/<span class="name">css.ref</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.username</span>&gt;</span>root<span class="tag">&lt;/<span class="name">db.username</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.password</span>&gt;</span>123456<span class="tag">&lt;/<span class="name">db.password</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">db.url</span>&gt;</span>http://199.119.111.11:3306?db<span class="tag">&lt;/<span class="name">db.url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>激活 <code>profile</code> 方式有多种：</p>
+<ul>
+<li>命令行中激活：比如 <code>mvn install -Pdev</code> 激活 <code>dev profile</code> </li>
+<li><code>profile</code> 配置中激活：使用 <code>activeByDefault</code> 默认激活</li>
+<li>系统属性激活：’’</li>
+<li>操作系统环境激活：</li>
+<li>文件是否存在激活：</li>
+</ul>
+<p><code>Maven</code> 的 <code>maven-site-plugin</code> 插件默认会使用两个自定义属性配置读取源码和文档的编码格式及生成站点的编码格式：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>Maven</code> 私服？？</p>
+<p>持续集成？？</p>
+<p>实现插件？？</p>
+<p>自定义  <code>archetype</code>？？？</p>
+<h2 id="五、Mybatis"><a href="#五、Mybatis" class="headerlink" title="五、Mybatis"></a>五、Mybatis</h2><h3 id="1、基础-1"><a href="#1、基础-1" class="headerlink" title="1、基础"></a>1、基础</h3><p>一般的 <code>ORM</code>  框架将 Java  对象和数据库表关联，而 <code>Mybatis</code> 是将 Java 方法和 SQL 语句关联。</p>
+<p>Java 方法和 SQL 语句的关联是通过称为 <code>mapper</code> 的 <code>xml</code> 文件和以 <code>Mapper</code> 为后缀的接口文件实现的。</p>
+<p><code>Mybatis</code> 自带基于 <code>HashMap</code> 的高速缓存，第一次执行一条 SQL 时会从数据库中取数据，之后再次执行就会从高速缓存中取数据。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://ifangcy.com/2017/12/21/Java/" data-id="cklbodpoo000f4wu5fyodczt9" data-title="Java" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JDBC/" rel="tag">JDBC</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaWeb/" rel="tag">JavaWeb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Maven/" rel="tag">Maven</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mybatis/" rel="tag">Mybatis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Tomcat/" rel="tag">Tomcat</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/03/07/Go/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          Go
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Django/" rel="tag">Django</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Go/" rel="tag">Go</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDBC/" rel="tag">JDBC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaWeb/" rel="tag">JavaWeb</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Maven/" rel="tag">Maven</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySQL/" rel="tag">MySQL</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mybatis/" rel="tag">Mybatis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tomcat/" rel="tag">Tomcat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vue/" rel="tag">Vue</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Django/" style="font-size: 10px;">Django</a> <a href="/tags/Go/" style="font-size: 10px;">Go</a> <a href="/tags/JDBC/" style="font-size: 10px;">JDBC</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/JavaWeb/" style="font-size: 10px;">JavaWeb</a> <a href="/tags/Maven/" style="font-size: 10px;">Maven</a> <a href="/tags/MySQL/" style="font-size: 10px;">MySQL</a> <a href="/tags/Mybatis/" style="font-size: 10px;">Mybatis</a> <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Tomcat/" style="font-size: 10px;">Tomcat</a> <a href="/tags/Vue/" style="font-size: 10px;">Vue</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/02/">二月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">一月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/02/07/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2021/02/07/Python/">Python</a>
+          </li>
+        
+          <li>
+            <a href="/2020/01/07/Vue3/">Vue3</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/07/Go/">Go</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/21/Java/">Java</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 iFangcy<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
